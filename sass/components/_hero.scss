@@ -1,0 +1,46 @@
+/* Блок Герой */
+
+.hero-page {
+
+    margin: 0px;
+    padding-top: 200px;
+    padding-bottom: 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bighero.jpg);
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #ECECEC;
+
+}
+
+.hero-page__hero-container {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+            
+}
+
+
+.hero-page__title {
+   
+    width: 696px;
+    border-radius: nullpx;
+    
+          margin-top: 0px;
+          margin-bottom: 30px;  
+          color: #FFFFFF;
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+}

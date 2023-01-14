@@ -1,0 +1,186 @@
+/* Футер */
+
+.footer-page {
+    display: flex;
+    background-color: #2F303A;
+    padding: 60px 0px;
+}
+
+.footer-page>.container {
+    display: flex;
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+    align-items: baseline;
+}
+
+.footer-page__adress {
+    margin-right: 70px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+/* LOGO */
+.logo-setting {
+    display: flex;
+}
+
+.logo {
+    font-family: Raleway, Georgia;
+    color: #2196F3;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-white {
+    color: #FFFFFF;
+}
+
+.footer-page__list {
+    display: block;
+    margin-top: 28px;
+}
+
+.footer-page__list>.footer-page__item+.footer-page__item {
+    margin-top: 10px;
+}
+
+.footer-page__street {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.footer-page__contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-page__adress:hover,
+.footer-page__adress:focus,
+.footer-page__contact:hover,
+.footer-page__contact:focus {
+    color: var(--accent-color);
+}
+
+.footer-page__join {
+    margin-right: 93px;
+}
+
+.footer-page__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+
+}
+
+.footer-page__social {
+    display: flex;
+
+}
+
+.footer-page__social>.item+.item {
+    margin-left: 10px;
+}
+
+.footer-page__social>.item {
+
+    height: 44px;
+}
+
+.footer-page__social {
+    width: 40px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.footer-page__button {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    border: none;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-page__button:hover,
+.footer-page__button:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+}
+
+.footer-page__subscribe {}
+
+.footer-page__subscribe-title {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer-page__input-subscribe {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+    padding: 15px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.footer-page__form-sub {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-page__input-subscribe:hover,
+.footer-page__input-subscribe:focus {
+    color: #FFFFFF;
+    border-color: var(--accent-color);
+}
+
+.footer-page__icon-send {
+    margin-left: 10px;
+}
+
+.footer-page__adress:hover {
+    color: var(--accent-color)
+}
