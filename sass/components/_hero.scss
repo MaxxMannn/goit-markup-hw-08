@@ -69,37 +69,22 @@
 
 }
 
-.hero-page__hero-container {
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-    justify-content:center;
-            
-}
-
-
 .hero-page__title {
-   
-    width: 696px;
-    border-radius: nullpx;
-    
-          margin-top: 0px;
-          margin-bottom: 30px;  
-          color: #FFFFFF;
-        font-family: 'Roboto';
-    font-style: normal;
+margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
+    color: #FFFFFF;
+
     @media screen and(max-width:390px) {
-            font-size: 20px;
-        }
-    
-        @media screen and(min-width:1200px) {
-            font-size: 44px;
-            line-height: 1.36;
-        }
+        font-size: 20px;
+    }
+
+    @media screen and(min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
