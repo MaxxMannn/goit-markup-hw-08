@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body data-menu-overflow>
     <!-- Шапка -->
         <header class="header-page">
             <div class="container">
@@ -22,6 +22,7 @@
                     <nav class="header-page__header-nav">
                         <a class="header-page__logo-link" href="/index.html">Web<span
                                 class="header-page__logo-header">Studio</span></a>
+                                <div class="menu-container" data-menu>
                         <ul class="header-page__header__menu">
                             <li><a href="./index.html" class="header-page__link--current">Студія</a></li>
                             <li><a href="./portfolio.html" class="header-page__link">Портфоліо</a></li>
@@ -45,7 +46,14 @@
                                 +38 096 111 11 11</a></li>
                     </ul>
                 </div>
+                <button type="button" class="menu-button" data-menu-button>
+                    <svg class="burger__icon-list" width="40px" height="40px" aria-label="Переключатель бургера">
+                        <use class="icon__burger-close" href="./images/icons.svg#icon-burger-close"></use>
+                        <use class="icon__burger-open" href="./images/icons.svg#icon-burger-open"></use>
+                    </svg>
+                </button>
             </div>
+        </div>
         </header>
 
 <main>
@@ -109,9 +117,33 @@
         <div class="container">
             <h3 class="occupation-page__tittle">Чим ми займаємося</h3>
             <ul class="occupation-page__item">
-                <li class="occupation-page__items"><img src="./images/imgone.jpg" width="370" alt="компютер"><p class="occupation-page__text">Десктопні додатки</p></li>
-                <li class="occupation-page__items"><img src="./images/imgtwo.jpg" width="370" alt="ноутбук"><p class="occupation-page__text">Мобільні додатки</p></li>
-                <li class="occupation-page__items"><img src="./images/imgthree.jpg" width="370" alt="планшет"><p class="occupation-page__text">Дизайнерські рішення</p></li>
+                <li class="occupation-page__items"><picture>
+                    <source srcset="
+                                                ./images/icon1-370.jpg 1x,
+                                                ./images/icon1-740.jpg 2x
+                                                " type="image/jpeg" />
+                    <img class="uccupation-icon" src="./images/icon1-370.jpg" alt="80% практики" />
+                </picture><div class="occupation-page__bottom"><p class="occupation-page__text">Десктопні додатки</p></div></li>
+                <li class="occupation-page__items"><picture>
+                    <source srcset="
+                                                ./images/icon2-370.jpg 1x,
+                                                ./images/icon2-740.jpg 2x
+                                                " type="image/jpeg" />
+                    <img class="uccupation-icon" src="./images/icon2-370.jpg" alt="робота з прогами на телефоні" />
+                </picture>
+                <div class="occupation-page__bottom">
+                    <p class="occupation-page__text">МОБІЛЬНІ ДОДАТКИ</p>
+                </div></li>
+                <li class="occupation-page__items"><picture>
+                    <source srcset="
+                                                ./images/icon3-370.jpg 1x,
+                                                ./images/icon3-740.jpg 2x
+                                                " type="image/jpeg" />
+                    <img class="uccupation-icon" src="./images/icon3-370.jpg" alt="оформлення сайтів" />
+                </picture>
+                <div class="occupation-page__bottom">
+                    <p class="occupation-page__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                </div></li>
             </ul>
         </div>
         </div>
@@ -122,7 +154,21 @@
         <div class="container">
             <h3 class="team-page__title">Наша команда</h3>
         <ul class="team-page__items">
-            <li class="team-page__members"><img src="./images/Product-Designer.jpg" width="270" alt="Продукт Дизайнер">
+            <li class="team-page__members"><picture>
+                <source srcset="
+                                        ./images/mobile/Product-Designer-450.jpg 1x,
+                                        ./images/mobile/Product-Designer-900.jpg 2x
+                                        " media="(max-width: 767px)" type="image/jpeg" />
+                <source srcset="
+                                          ./images/tabletka/Product-Designer-354.jpg 1x,
+                                          ./images/tabletka/Product-Designer-708.jpg 2x
+                                        " media="(max-width: 1199px)" type="image/jpeg" />
+                <source srcset="
+                                        ./images/desktop/Product-Designer-270.jpg 1x,
+                                        ./images/desktop/Product-Designer-540.jpg 2x
+                                        " type="image/jpeg" />
+                <img class="team-list__icon" src="./images/mobile/Product-Designer-450.jpg" alt="Фотографія працівника" />
+            </picture>
                 <div class="team-page__names">
                     <h3 class="team-page__name">Ігор Дем'яненко</h3>
                     <p class="team-page__description">Product Designer</p>
@@ -163,7 +209,21 @@
                 </div>
                           
             </li>
-            <li class="team-page__members"><img src="./images/Frontend-Dev.jpg" width="270" alt="Фронтенд дев">
+            <li class="team-page__members"><picture>
+                <source srcset="
+                                            ./images/mobile/Frontend-Dev-450.jpg 1x,
+                                            ./images/mobile/Frontend-Dev-900.jpg 2x
+                                            " media="(max-width: 767px)" type="image/jpeg" />
+                <source srcset="
+                                              ./images/tabletka/Frontend-Dev-354.jpg 1x,
+                                              ./images/tabletka/Frontend-Dev-708.jpg 2x
+                                            " media="(max-width: 1199px)" type="image/jpeg" />
+                <source srcset="
+                                            ./images/desktop/Frontend-Dev-270.jpg 1x,
+                                            ./images/desktop/Frontend-Dev-540.jpg 2x
+                                            " type="image/jpeg" />
+                <img class="team-list__icon" src="./images/mobile/Frontend-Dev-450.jpg" alt="Фотографія працівника" />
+            </picture>
                 <div class="team-page__names">
                     <h3 class="team-page__name">Ольга Рєпіна</h3>
                     <p class="team-page__description">Frontend Developer</p>
@@ -205,7 +265,21 @@
                 
            
             
-            <li class="team-page__members"><img src="./images/Marketing.jpg" width="270" alt="Маркетинг">
+            <li class="team-page__members"><picture>
+                <source srcset="
+                                            ./images/mobile/Marketing-450.jpg 1x,
+                                            ./images/mobile/Marketing-900.jpg 2x
+                                            " media="(max-width: 767px)" type="image/jpeg" />
+                <source srcset="
+                                              ./images/tabletka/Marketing-354.jpg 1x,
+                                              ./images/tabletka/Marketing-708.jpg 2x
+                                            " media="(max-width: 1199px)" type="image/jpeg" />
+                <source srcset="
+                                            ./images/desktop/Marketing-270.jpg 1x,
+                                            ./images/desktop/Marketing-540.jpg 2x
+                                            " type="image/jpeg" />
+                <img class="team-list__icon" src="./images/mobile/Marketing-450.jpg" alt="Фотографія працівника" />
+            </picture>
                 <div class="team-page__names">
                     <h3 class="team-page__name">Микола Тарасов</h3>
                     <p class="team-page__description">Marketing</p>
@@ -246,7 +320,21 @@
                 </div>
                 
             </li>
-            <li class="team-page__members"><img src="./images/UI-Designer.jpg" width="270" alt="Дизайнер">
+            <li class="team-page__members"><picture>
+                <source srcset="
+                                            ./images/mobile/UI-Designer-450.jpg 1x,
+                                            ./images/mobile/UI-Designer-900.jpg 2x
+                                            " media="(max-width: 767px)" type="image/jpeg" />
+                <source srcset="
+                                              ./images/tabletka/UI-Designer-354.jpg 1x,
+                                              ./images/tabletka/UI-Designer-708.jpg 2x
+                                            " media="(max-width: 1199px)" type="image/jpeg" />
+                <source srcset="
+                                            ./images/desktop/UI-Designer-270.jpg 1x,
+                                            ./images/desktop/UI-Designer-540.jpg 2x
+                                            " type="image/jpeg" />
+                <img class="team-list__icon" src="./images/mobile/UI-Designer-450.jpg" alt="Фотографія працівника" />
+            </picture>
                 <div class="team-page__names">
                     <h3 class="team-page__name">Михайло Єрмаков</h3>
                     <p class="team-page__description">UI Designer</p>
