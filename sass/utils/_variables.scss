@@ -1,23 +1,41 @@
-:root {
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-
-    --white-color: #FFFFFF;
-    --accent-color: #2196F3;
-    --secondary-back-color: #F5F5F5;
-}
-/* колір основного тексту #212121 */
-
-/* колір другорядного тексту #757575 */
-
-/* білий колір #FFFFFF */
-
-/* акцент #2196F3 */
-
-/* другорядний колір фону #F5F5F5 */
-
 $blue-color: #2196F3;
 $title-color: #212121;
 $text-color: #757575;
 $svg-color: #AFB1B8;
 $cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--primary-text-color);
+}
+
+.main-page-title {
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-bottom: 30px;
+
+    @media screen and(min-width:1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}

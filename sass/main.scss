@@ -1,15 +1,6 @@
-// Utils**** 
-@import './utils/fonts';
 @import './utils/variables';
-// Base
-@import './base/base';
-// Components
-@import './components/button';
 @import './components/header';
-@import './components/hero';
 @import './components/body';
-@import './components/modal';
 @import './components/footer';
-
-// container
-@import './layout/container'
+@import './components/modal';
+@import './components/wrapper';
