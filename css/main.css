@@ -1728,7 +1728,7 @@ body.is-modal-hidden {
 }
 @media screen and (max-width: 767px) {
   .panorama-page__menu-list > .item:nth-child(4) {
-    margin-left: 0px;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1737,7 +1737,7 @@ body.is-modal-hidden {
         flex-wrap: wrap;
   }
   .panorama-page__menu-list > .item:nth-child(3) {
-    margin-right: 100px;
+    margin-right: 1px;
   }
   .panorama-page__menu-list > .item:first-child {
     margin-bottom: 15px;
